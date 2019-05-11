@@ -7,17 +7,27 @@
     <title>Transformation</title>
     <style>
       .box {
-        width: 500px;
-        height: 500px;
+        width: 100px;
+        height: 100px;
         background-color: red;
-        transition: transform 0.5s ease-in-out;
+        animation: 5s scale-and-rotat-square infinite ease-in-out;
       }
-      .box:hover {
-        transform: rotate(1turn) scale(0.5, 0.5);
+      @keyframes scale-and-rotat-square {
+        0% {
+          transform: none;
+        }
+        50% {
+          transform: rotate(1turn) scale(0.5, 0.5);
+          color: white;
+        }
+        100% {
+          transform: none;
+          color: blue;
+        }
       }
     </style>
   </head>
   <body>
-    <div class="box"></div>
+    <div class="box">11</div>
   </body>
 </html>
