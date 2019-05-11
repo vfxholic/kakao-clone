@@ -4,25 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CSS States</title>
+    <title>Transistion</title>
     <style>
-        .box{
-            background-color: red;
-            font-size: 40px;
-        }
-        .box:hover{
-            background-color: pink;
-        }
-        .box:active{
-            background-color: green;
-        }
-        .box:focus{
-            background-color: blue;
-        }
+      .box {
+        background-color: red;
+        color: white;
+        transition: background-color 0.5s ease-in-out;
+      }
+      .box:active {
+        background-color: blue;
+        color: green;
       }
     </style>
   </head>
   <body>
-    <textarea class="box">lalalalala</textarea>
+    <span class="box">text</span>
   </body>
 </html>
