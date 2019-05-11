@@ -4,30 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Transformation</title>
+    <title>Media Queries</title>
     <style>
-      .box {
-        width: 100px;
-        height: 100px;
-        background-color: red;
-        animation: 5s scale-and-rotat-square infinite ease-in-out;
+      body {
+        background-color: green;
       }
-      @keyframes scale-and-rotat-square {
-        0% {
-          transform: none;
-        }
-        50% {
-          transform: rotate(1turn) scale(0.5, 0.5);
-          color: white;
-        }
-        100% {
-          transform: none;
-          color: blue;
+      @media screen and (min-width: 320px) and (max-width: 640px) {
+        body {
+          background-color: blue;
         }
       }
     </style>
   </head>
-  <body>
-    <div class="box">11</div>
-  </body>
+  <body></body>
 </html>
